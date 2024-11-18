@@ -1,8 +1,9 @@
 import logoLivro from "../../assets/logoLivro.png";
 import lupaHeader from "../../assets/lupaHeader.png";
 import Inicio from "../../pages/inicio/Inicio.jsx";
-import QueroDoar from "../../pages/livrosDoados/livrosDoados.jsx";
-import LivrosDoados from "../../pages/queroDoar/queroDoar.jsx";
+import QueroDoar from "../../pages/livrosDoados/LivrosDoados.jsx";
+import LivrosDoados from "../../pages/queroDoar/QueroDoar.jsx";
+import s from "../header/header.module.scss";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
@@ -10,30 +11,38 @@ export default function Header() {
   return (
     <BrowserRouter>
       <header>
-        <section>
-          <img
-            src={logoLivro}
-            alt="Imagem de um livro azul aberto, com as paginas sendo trocadas, logo do projeto"
-          />
+        <section className={s.logoHeader}>
+          <Link to="/">
+            <img
+              src={logoLivro}
+              alt="Imagem de um livro azul aberto, com as paginas sendo trocadas, logo do projeto"
+            />
+          </Link>
 
           <h1>Livros Vai Na Web</h1>
         </section>
 
-        <nav>
+        <nav className={s.navHeader}>
           <ul>
             <li>
-              <Link to="/">Início</Link>
+              <Link className={s.link} to="/">
+                Início
+              </Link>
             </li>
             <li>
-              <Link to="/livrosDoados">Livros Doados</Link>
+              <Link className={s.link} to="/livrosDoados">
+                Livros Doados
+              </Link>
             </li>
             <li>
-              <Link to="/queroDoar">Quero Doar</Link>
+              <Link className={s.link} to="/queroDoar">
+                Quero Doar
+              </Link>
             </li>
           </ul>
         </nav>
 
-        <section>
+        <section className={s.barraDeBusca}>
           <input
             type="search"
             name=""
