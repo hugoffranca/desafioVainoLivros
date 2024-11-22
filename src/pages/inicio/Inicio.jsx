@@ -1,7 +1,10 @@
+import s from "../inicio/inicio.module.scss";
 export default function Inicio() {
   return (
-    <section>
-      <h1>teste2</h1>
-    </section>
+    <main>
+      <section className={s.secaoH2}>
+        <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
+      </section>
+    </main>
   );
 }

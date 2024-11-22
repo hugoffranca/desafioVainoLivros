@@ -12,6 +12,7 @@ header {
   justify-content: space-around;
 
   h1 {
+    padding-top: 20px;
     font-size: 25px;
     color: #ffff;
   }
@@ -30,6 +31,10 @@ header {
     color: #ffff;
     font-size: 25px;
     text-decoration: none;
+
+    &:hover {
+      color: rgb(190, 190, 222);
+    }
   }
 }
 

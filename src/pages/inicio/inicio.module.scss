@@ -1,0 +1,16 @@
+.secaoH2 {
+  height: 75vh;
+  width: 100%;
+  background-image: url("../../assets/bannerInicioLivros.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+
+  h2 {
+    color: #ffff;
+    font-size: 32px;
+    width: 20%;
+    margin-left: 5%;
+  }
+}
