@@ -1,4 +1,4 @@
-import Header from "./components/header/Header";
+import Header from "./components/Header/Header.jsx"
 import "./GlobalStyle/globalStyle.scss";
 export default function App() {
   return (
