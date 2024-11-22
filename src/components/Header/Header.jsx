@@ -1,8 +1,8 @@
 import logoLivro from "../../assets/logoLivro.png";
 import lupaHeader from "../../assets/lupaHeader.png";
 import Inicio from "../../pages/inicio/Inicio.jsx";
-import QueroDoar from "../../pages/livrosDoados/LivrosDoados.jsx";
-import LivrosDoados from "../../pages/queroDoar/QueroDoar.jsx";
+import LivrosDoados from "../../pages/LivrosDoados/livrosDoados.jsx"
+import QueroDoar from "../../pages/queroDoar/queroDoar.jsx"
 import s from "../header/header.module.scss";
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
