@@ -5,11 +5,11 @@ import LivrosDoados from "../../pages/livrosDoados/LivrosDoados"
 import QueroDoar from "../../pages/queroDoar/QueroDoar.jsx"
 import s from "../header/header.module.scss";
 
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <BrowserRouter>
+    <>
       <header>
         <section className={s.logoHeader}>
           <Link to="/">
@@ -62,6 +62,6 @@ export default function Header() {
         <Route path="/livrosDoados" element={<LivrosDoados />} />
         <Route path="/queroDoar" element={<QueroDoar />} />
       </Routes>
-    </BrowserRouter>
+      </>
   );
 }
