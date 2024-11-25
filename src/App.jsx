@@ -1,10 +1,11 @@
-import Header from "./components/Header/Header.jsx"
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 import "./GlobalStyle/globalStyle.scss";
-import { BrowserRouter } from "react-router-dom";
 export default function App() {
   return (
-    <BrowserRouter>
+    <section>
       <Header />
-      </BrowserRouter>
+      <Footer />
+    </section>
   );
 }

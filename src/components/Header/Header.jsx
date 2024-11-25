@@ -1,15 +1,15 @@
 import logoLivro from "../../assets/logoLivro.png";
 import lupaHeader from "../../assets/lupaHeader.png";
 import Inicio from "../../pages/inicio/Inicio.jsx";
-import LivrosDoados from "../../pages/livrosDoados/LivrosDoados"
-import QueroDoar from "../../pages/queroDoar/QueroDoar.jsx"
+import QueroDoar from "../../pages/queroDoar/QueroDoar.jsx";
+import LivrosDoados from "../../pages/livrosDoados/LivrosDoados.jsx";
 import s from "../header/header.module.scss";
 
-import { Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <>
+    <BrowserRouter>
       <header>
         <section className={s.logoHeader}>
           <Link to="/">
@@ -19,7 +19,9 @@ export default function Header() {
             />
           </Link>
 
-          <h1>Livros Vai Na Web</h1>
+          <Link to="/">
+            <h1>Livros Vai Na Web</h1>
+          </Link>
         </section>
 
         <nav className={s.navHeader}>
@@ -62,6 +64,6 @@ export default function Header() {
         <Route path="/livrosDoados" element={<LivrosDoados />} />
         <Route path="/queroDoar" element={<QueroDoar />} />
       </Routes>
-      </>
+    </BrowserRouter>
   );
 }
